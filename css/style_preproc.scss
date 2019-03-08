@@ -1,0 +1,23 @@
+.far, .fas{
+  color: black;
+  font-size: 18px;
+  margin-left: 10px;
+}
+.action--menu:before{
+  content: "MENU";
+  font-size: 18px;
+  color: #000000;
+
+}
+.action--close:before{
+  content: "MENU";
+  font-size: 18px;
+  color: #000000;
+  transform: rotate(180deg);
+  display: block;
+  margin-top: 1px;
+  top: -6px;
+  left: 6px;
+  position: relative;
+
+}
