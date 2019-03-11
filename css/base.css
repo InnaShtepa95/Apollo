@@ -286,7 +286,7 @@ a:focus {
 main {
     position: relative;
     width: 100%;
-    text-align: center;
+   /* text-align: center;*/
 }
 
 .frame {
@@ -672,7 +672,7 @@ main {
     }
 
     .menu__item-inner {
-        align-items: center;
+       /* align-items: center;*/
     }
 
     .label {
@@ -828,6 +828,7 @@ main {
 
 .apollo_descr {
     max-width: 620px;
+    margin-left: 70px;
 
 }
 
@@ -842,8 +843,12 @@ main {
     display: inline-block;
     width: 50px;
 }
+.apollo_name{
+    margin-left: 70px;
+}
 
 .social_icons {
+    margin-left: 70px;
     z-index: 199;
     margin-top: 60px;
     text-align: left!important;
