@@ -845,7 +845,7 @@ main {
 .social_icons {
     z-index: 199;
     margin-top: 60px;
-    
+    text-align: left!important;
 
 }
 
@@ -858,6 +858,36 @@ width: 33px;
     margin-right: 20px;
     background-color: #909090;
 
+}
+.social_icons .facebook:hover{
+    box-shadow: 0 0 8px darkblue;
+
+}
+.social_icons .facebook i:hover{
+    color: darkblue;
+}
+
+
+.social_icons .instagram:hover{
+    box-shadow: 0 0 8px deeppink;
+}
+.social_icons .instagram i:hover{
+    color: deeppink;
+}
+
+
+.social_icons .twitter:hover{
+    box-shadow: 0 0 8px dodgerblue;
+}
+.social_icons .twitter i:hover{
+   color: dodgerblue;
+}
+
+.social_icons .pinterest:hover{
+    box-shadow: 0 0 8px red;
+}
+.social_icons .pinterest i:hover{
+   color: red;
 }
 
 .social_icons a i {
