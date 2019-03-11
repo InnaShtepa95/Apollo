@@ -624,3 +624,30 @@ main {
 	position: relative;
 
 }
+.apollo_descr{
+	max-width: 620px;
+
+}
+
+.apollo_name:before{
+	content: "";
+	border: solid 0.5px black;
+	width: 80px;
+	clear: both;
+	margin-bottom: 15px;
+	margin-right: 40px;
+	margin-left: 0px;
+	display: inline-block;
+	width: 50px;
+}
+
+.social_icons a{
+	display: inline-block;
+
+}
+
+.social_icons a i{
+	height: 33px;
+	width: 33px;
+	background-color: black;
+}
