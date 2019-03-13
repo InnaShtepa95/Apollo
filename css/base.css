@@ -187,6 +187,7 @@ table {
 }
 
 body {
+    overflow: hidden;
     padding: 50px;
     --color-text: #fff;
     --color-bg: #252525;
@@ -371,6 +372,8 @@ main {
     /*font-family: "sabbath-black", serif;*/
     font-family: 'Raleway', sans-serif;
     font-size: 50px;
+    position: absolute;
+ top:250px;
     /*	mix-blend-mode: screen;*/
     line-height: 0.8;
     /*	text-transform: lowercase;*/
@@ -380,7 +383,10 @@ main {
 }
 
 .content__tagline {
+    position: absolute;
+
     font-style: italic;
+    top:300px;
     font-family: 'lmromanslant10regular';
     color: black;
     line-height: 25px;
@@ -721,9 +727,9 @@ main {
 
     .mainmenu,
     .sidemenu {
-        background-image: url("../img/cam.png");
+       /* background-image: url("../img/cam.png");
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: cover;*/
         width: 100%;
         height: 100%;
         display: flex;
@@ -826,79 +832,3 @@ main {
 
 }
 
-.apollo_descr {
-    max-width: 620px;
-    margin-left: 70px;
-
-}
-
-.apollo_name:before {
-    content: "";
-    border: solid 0.5px black;
-    width: 80px;
-    clear: both;
-    margin-bottom: 15px;
-    margin-right: 40px;
-    margin-left: 0px;
-    display: inline-block;
-    width: 50px;
-}
-.apollo_name{
-    margin-left: 70px;
-}
-
-.social_icons {
-    margin-left: 70px;
-    z-index: 199;
-    margin-top: 60px;
-    text-align: left!important;
-
-}
-
-.social_icons a {
-    padding-top: 8px;
-    padding-bottom: 8px;
-    text-align: center;
-width: 33px;
-    display: inline-block;
-    margin-right: 20px;
-    background-color: #909090;
-
-}
-.social_icons .facebook:hover{
-    box-shadow: 0 0 8px darkblue;
-
-}
-.social_icons .facebook i:hover{
-    color: darkblue;
-}
-
-
-.social_icons .instagram:hover{
-    box-shadow: 0 0 8px deeppink;
-}
-.social_icons .instagram i:hover{
-    color: deeppink;
-}
-
-
-.social_icons .twitter:hover{
-    box-shadow: 0 0 8px dodgerblue;
-}
-.social_icons .twitter i:hover{
-   color: dodgerblue;
-}
-
-.social_icons .pinterest:hover{
-    box-shadow: 0 0 8px red;
-}
-.social_icons .pinterest i:hover{
-   color: red;
-}
-
-.social_icons a i {
-
-line-height: 20px;
-    font-size: 18px;
-    color: white;
-}
