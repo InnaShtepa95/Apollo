@@ -4,6 +4,29 @@
   }
 }
 
+/*******/
+.content__title {
+  /*font-family: "sabbath-black", serif;*/
+  font-family: 'Raleway', sans-serif;
+  font-size: 50px;
+  position: absolute;
+  top: 250px;
+  /*	mix-blend-mode: screen;*/
+  line-height: 0.8;
+  /*	text-transform: lowercase;*/
+  margin: 0;
+
+  color: black;
+  z-index: 199;
+  @include max-screen(847px) {
+    left: 30px;
+
+  }
+
+}
+
+/********/
+
 .apollo_name:before {
   content: "";
   border: solid 0.5px black;
@@ -15,19 +38,21 @@
   display: inline-block;
 
 }
-.apollo_name{
-  top:150px;
+
+.apollo_name {
+  top: 150px;
   margin-left: 70px;
 
-  @include max-screen(1030px){
-    top:100px;
+  @include max-screen(1030px) {
+    top: 100px;
     text-align: center;
     line-height: 50px;
 
   }
 }
+
 .apollo_descr {
-  top:200px;
+  top: 200px;
 
   max-width: 620px;
   margin-left: 70px;
@@ -40,7 +65,7 @@
   margin-left: 70px;
   z-index: 199;
   margin-top: 60px;
-  text-align: left!important;
+  text-align: left !important;
 
 }
 
@@ -54,34 +79,37 @@
   background-color: #909090;
 
 }
-.social_icons .facebook:hover{
+
+.social_icons .facebook:hover {
   box-shadow: 0 0 8px darkblue;
 
 }
-.social_icons .facebook i:hover{
+
+.social_icons .facebook i:hover {
   color: darkblue;
 }
 
-
-.social_icons .instagram:hover{
+.social_icons .instagram:hover {
   box-shadow: 0 0 8px deeppink;
 }
-.social_icons .instagram i:hover{
+
+.social_icons .instagram i:hover {
   color: deeppink;
 }
 
-
-.social_icons .twitter:hover{
+.social_icons .twitter:hover {
   box-shadow: 0 0 8px dodgerblue;
 }
-.social_icons .twitter i:hover{
+
+.social_icons .twitter i:hover {
   color: dodgerblue;
 }
 
-.social_icons .pinterest:hover{
+.social_icons .pinterest:hover {
   box-shadow: 0 0 8px red;
 }
-.social_icons .pinterest i:hover{
+
+.social_icons .pinterest i:hover {
   color: red;
 }
 
@@ -92,11 +120,7 @@
   color: white;
 }
 
-
-
-
-
-.pre_loader{
+/*.pre_loader{
   width: 100%;
   height: 100%;
   background-color: #efefef;
@@ -154,7 +178,11 @@ body{
   60% {left: -1300px}
   100% {left: 0}
 
-  
+  @include max-screen(847px){
+    0% {left: -1300px}
+    60% {left: -1300px}
+    100% {left: 30px}
+  }
 }
 
 .content__tagline {
@@ -165,7 +193,8 @@ body{
 @keyframes content_appolo {
 
   0% {top: -1300px}
-  100% {top: 300px}
+  100% {top: 300px; }
+
 
 }
 .action--menu {
@@ -180,51 +209,173 @@ body{
 
 }
 
+*/
 
-
-.mainmenu{
- background-color: #efefef;
-  img{
+.mainmenu {
+  background-color: #efefef;
+  img {
     width: 100%;
     margin-top: 100px;
   }
 }
 
-.content__title{
-  @include max-screen(847px){
-    top:150px;
+.content__title {
+  @include max-screen(847px) {
+    top: 220px;
     font-size: 40px;
     line-height: 50px;
     left: 30px;
   }
 }
 
-.content__tagline{
-  @include max-screen(847px){
-    top:220px;
-    max-width:300px;
+.content__tagline {
+  @include max-screen(847px) {
+
+    max-width: 300px;
     left: 30px;
   }
-  @include max-screen(600px){
-    top:240px;
+  @include max-screen(600px) {
+
     font-weight: bold;
     max-width: 400px;
 
     margin-right: 30px;
 
-
   }
-@include max-screen(420px){
-  text-align: justify;
-}
+  @include max-screen(420px) {
+    text-align: justify;
+  }
 
 }
-.background{
-  @include max-screen(600px){
+
+.background {
+  @include max-screen(600px) {
     opacity: 0.6;
   }
 }
-.background, .background__copy{
-  @include max-screen(600px){
-  background-position: 60% 0%;}
+
+.background, .background__copy {
+  @include max-screen(600px) {
+    background-position: 60% 0%;
+  }
 }
+
+.mainmenu .apollo_name {
+  display: none;
+  @include max-screen(53em) {
+    display: block;
+   margin-left: 350px;
+    margin-top: -100px;
+  }
+  @include max-screen(750px){
+    margin-left: 270px;
+  }
+  @include max-screen(643px){
+    margin-left: 210px;
+  }
+  @include max-screen(420px){
+    font-size: 30px;
+margin-right: 15px;
+    margin-left: 130px;
+  }
+}
+
+
+.mainmenu .social_icons{
+  display: none;
+  @include max-screen(53em) {
+    display: block;
+    margin-left: 450px;
+    margin-top: -280px;
+
+  }
+  @include max-screen(750px){
+    margin-left:300px;
+  }
+  @include max-screen(562px){
+    margin-left: 200px;
+    margin-top: -215px;
+  }
+  @include max-screen(500px){
+    margin-left: 100px;
+    margin-top: -215px;
+  }
+  @include max-screen(330px){
+    margin-left: 80px;
+    margin-top: -215px;
+  }
+}
+
+
+.apollo_name:before{
+  @include max-screen(992px)
+  {
+    display: none;
+  }
+}
+/****/
+@include max-screen(53em) {
+  .menu {
+
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: repeat(2, 50%);
+
+  }
+  .apollo_name {
+    display: none;
+  }
+  .mainmenu {
+    img {
+      width: 50%;
+      margin-top: 0;
+    }
+  }
+.apollo_descr{
+  font-size: 16px;
+  top: 0;
+  max-width: 700px;
+  margin-right: 70px;
+
+  text-align: justify;
+
+
+
+  .social_icons{
+    display: none;
+  }
+}
+
+.menu__item--1 .menu__item-inner {
+  background-color: #efefef;
+}
+
+.content__tagline{
+  @include max-screen(500px){
+  margin-left: 0;}
+
+}
+
+}
+
+.apollo_descr{
+   @include max-screen(992px){
+     top:150px;
+     margin-right: 30px;
+   }
+
+    @include max-screen(600px){
+    font-weight: normal;
+    margin-right: 30px;
+  }
+  @include max-screen(848px){
+    top: 0;
+    margin-right: 70px;
+
+  }
+  @include max-screen(500px){
+
+    margin-right: 30px;
+
+  }
+ }
