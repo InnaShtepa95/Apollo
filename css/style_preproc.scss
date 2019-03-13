@@ -1,4 +1,8 @@
-
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
 
 .apollo_name:before {
   content: "";
@@ -14,6 +18,13 @@
 .apollo_name{
   top:150px;
   margin-left: 70px;
+
+  @include max-screen(1030px){
+    top:100px;
+    text-align: center;
+    line-height: 50px;
+
+  }
 }
 .apollo_descr {
   top:200px;
@@ -82,7 +93,7 @@
 }
 
 
-/*
+
 
 
 .pre_loader{
@@ -143,6 +154,7 @@ body{
   60% {left: -1300px}
   100% {left: 0}
 
+  
 }
 
 .content__tagline {
@@ -166,7 +178,9 @@ body{
   0% {right: -50rem;}
   100% {right: 1.5rem;}
 
-}*/
+}
+
+
 
 .mainmenu{
  background-color: #efefef;
@@ -174,4 +188,43 @@ body{
     width: 100%;
     margin-top: 100px;
   }
+}
+
+.content__title{
+  @include max-screen(847px){
+    top:150px;
+    font-size: 40px;
+    line-height: 50px;
+    left: 30px;
+  }
+}
+
+.content__tagline{
+  @include max-screen(847px){
+    top:220px;
+    max-width:300px;
+    left: 30px;
+  }
+  @include max-screen(600px){
+    top:240px;
+    font-weight: bold;
+    max-width: 400px;
+
+    margin-right: 30px;
+
+
+  }
+@include max-screen(420px){
+  text-align: justify;
+}
+
+}
+.background{
+  @include max-screen(600px){
+    opacity: 0.6;
+  }
+}
+.background, .background__copy{
+  @include max-screen(600px){
+  background-position: 60% 0%;}
 }
