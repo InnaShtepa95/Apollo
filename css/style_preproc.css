@@ -323,11 +323,18 @@ body {
   background: white url(../images/prev.png) no-repeat center; }
 
 .rm_nav a.rm_next {
+  right: 30px;
   width: 75px;
   height: 75px;
   z-index: 5;
   background: white;
   opacity: 1;
   background: white url(../images/next.png) no-repeat center; }
+
+.content_1 {
+  padding-left: 30px; }
+
+.rm_wrapper {
+  padding-right: 30px; }
 
 /*# sourceMappingURL=style_preproc.css.map */
