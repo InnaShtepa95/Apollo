@@ -444,8 +444,16 @@ body {
   width: 75px;
   height: 75px;
   z-index: 5;
-  background:white ;
-}
-.rm_nav a{
+ /* background:white ;*/
+  opacity: 1;
+  background: white url(../images/prev.png) no-repeat center;
 
+}
+.rm_nav a.rm_next{
+  width: 75px;
+  height: 75px;
+  z-index: 5;
+  background:white ;
+  opacity: 1;
+  background: white url(../images/next.png) no-repeat center;
 }
